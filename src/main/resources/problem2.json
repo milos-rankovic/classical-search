@@ -1,0 +1,162 @@
+{
+  "states": [
+    {
+      "name": "S",
+      "heuristic": 0,
+      "actions": [
+        {
+          "state": "A",
+          "cost": 100
+        },
+        {
+          "state": "B",
+          "cost": 3
+        },
+        {
+          "state": "E",
+          "cost": 14
+        },
+        {
+          "state": "F",
+          "cost": 4
+        }
+      ]
+    },
+    {
+      "name": "A",
+      "heuristic": 50,
+      "actions": [
+        {
+          "state": "S",
+          "cost": 100
+        },
+        {
+          "state": "C",
+          "cost": 4
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "heuristic": 45,
+      "actions": [
+        {
+          "state": "S",
+          "cost": 3
+        },
+        {
+          "state": "D",
+          "cost": 4
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "heuristic": 46,
+      "actions": [
+        {
+          "state": "A",
+          "cost": 4
+        },
+        {
+          "state": "I",
+          "cost": 50
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "heuristic": 41,
+      "actions": [
+        {
+          "state": "B",
+          "cost": 4
+        },
+        {
+          "state": "I",
+          "cost": 50
+        }
+      ]
+    },
+    {
+      "name": "E",
+      "heuristic": 48,
+      "actions": [
+        {
+          "state": "S",
+          "cost": 14
+        },
+        {
+          "state": "H",
+          "cost": 16
+        }
+      ]
+    },
+    {
+      "name": "F",
+      "heuristic": 42,
+      "actions": [
+        {
+          "state": "S",
+          "cost": 4
+        },
+        {
+          "state": "H",
+          "cost": 16
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "heuristic": 34,
+      "actions": [
+        {
+          "state": "E",
+          "cost": 16
+        },
+        {
+          "state": "F",
+          "cost": 16
+        },
+        {
+          "state": "I",
+          "cost": 30
+        }
+      ]
+    },
+    {
+      "name": "I",
+      "heuristic": 5,
+      "actions": [
+        {
+          "state": "C",
+          "cost": 50
+        },
+        {
+          "state": "D",
+          "cost": 50
+        },
+        {
+          "state": "H",
+          "cost": 30
+        },
+        {
+          "state": "K",
+          "cost": 10
+        }
+      ]
+    },
+    {
+      "name": "K",
+      "heuristic": 0,
+      "actions": [
+        {
+          "state": "I",
+          "cost": 10
+        }
+      ]
+    }
+  ],
+  "start_state": "S",
+  "goal_state": "K"
+}

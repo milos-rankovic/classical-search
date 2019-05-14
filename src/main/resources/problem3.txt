@@ -1,0 +1,25 @@
+states: S, A, B, C, D, E, F, H, I, K
+heuristics: 0, 60, 51, 55, 50, 56, 50, 39, 0, 0
+state_actions:
+    S: A, B, E, F
+    path_cost: 100, 2, 14, 4
+    A: S, C
+    path_cost: 100, 4
+    B: S, D
+    path_cost: 2, 4
+    C: A, I
+    path_cost: 4, 50
+    D: B, I
+    path_cost: 4, 50
+    E: S, H
+    path_cost: 14, 16
+    F: S, H
+    path_cost: 4, 16
+    H: E, F, I
+    path_cost: 16, 16, 30
+    I: C, D, H, K
+    path_cost: 50, 50, 30, 10
+    K: I
+    path_cost: 10
+start: S
+goal: K
