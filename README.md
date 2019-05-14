@@ -4,7 +4,7 @@
 
 ## Requirements
 
-In order to use these examples you should have at least version 10 of the JDK (because of the local variable type inference).
+Java 10 or above (because of the local variable type inference).
 
 ## Usage
 
